@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Crestwood C Mark Vector</title>
+  <desc id="desc">A vector recreation of the Crestwood C mark: an open square frame surrounding a bold letter C.</desc>
+  <defs>
+    <style>.mark { fill: #002b35; }</style>
+  </defs>
+  <g class="mark">
+    <rect x="16" y="16" width="710" height="72" />
+    <rect x="16" y="16" width="72" height="954" />
+    <rect x="913" y="30" width="72" height="940" />
+    <rect x="308" y="902" width="677" height="72" />
+    <path d="M 793.157 295.381 A 337.000 337.000 0 1 0 793.157 728.619 L 701.232 651.485 A 217.000 217.000 0 1 1 701.232 372.515 Z" />
+  </g>
+</svg>
