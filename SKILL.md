@@ -8,7 +8,7 @@ description: Apply Crestwood Church branding (Raleway font, #158fb2 palette, log
 ## Quick start
 - Confirm the request is for Crestwood Church or a church-specific audience; if unclear, ask.
 - Apply the brand guidelines in `references/brand-guidelines.md`.
-- Use the primary horizontal logo from `assets/Crestwood+Horizontal+Logo.webp` or `assets/Crestwood+Horizontal+Logo.png` where appropriate.
+- Use the primary horizontal logo from `assets/Crestwood+Horizontal+Logo.svg` for scalable/vector output; use `assets/Crestwood+Horizontal+Logo.webp` or `assets/Crestwood+Horizontal+Logo.png` when raster formats are required.
 - Use the alternate C mark from `assets/Crestwood+C+Mark.svg` or `assets/Crestwood+C+Mark.png` only when a compact icon-style mark is a better fit than the full horizontal logo.
 
 ## Workflow

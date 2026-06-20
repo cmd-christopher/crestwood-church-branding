@@ -11,6 +11,8 @@
 
 ## Logos and Marks
 - Primary horizontal logo files:
+  - assets/Crestwood+Horizontal+Logo.svg (preferred scalable/vector use; letterforms are outlined)
+  - assets/Crestwood+Horizontal+Logo.editable.svg (editable source/reference; requires Raleway)
   - assets/Crestwood+Horizontal+Logo.webp (web use)
   - assets/Crestwood+Horizontal+Logo.png (Office docs and email clients)
 - Alternate C mark files:

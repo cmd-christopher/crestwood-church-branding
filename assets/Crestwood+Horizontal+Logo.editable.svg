@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 587 71" width="587" height="71" role="img" aria-labelledby="title desc">
+  <title id="title">Crestwood Church Horizontal Logo Editable</title>
+  <desc id="desc">Editable text version of the Crestwood Church horizontal logo. Requires Raleway.</desc>
+  <style>
+    .word { font-family: Raleway, sans-serif; font-size: 48px; font-weight: 700; letter-spacing: 4.3px; }
+  </style>
+  <rect x="1" y="0" width="497" height="6" fill="#008FB4"/>
+  <rect x="82" y="65" width="497" height="6" fill="#083C4F"/>
+  <text class="word" x="1" y="54" fill="#008FB4">CRESTWOOD</text>
+  <text class="word" x="350" y="54" fill="#083C4F">CHURCH</text>
+</svg>
