@@ -11,6 +11,7 @@ description: Apply Crestwood Church branding (Raleway font, #158fb2 palette, log
 - Use the primary horizontal logo from `assets/Crestwood+Horizontal+Logo.svg` for scalable/vector output; use `assets/Crestwood+Horizontal+Logo.webp` or `assets/Crestwood+Horizontal+Logo.png` when raster formats are required.
 - Use the alternate C mark from `assets/Crestwood+C+Mark.svg` or `assets/Crestwood+C+Mark.png` only when a compact icon-style mark is a better fit than the full horizontal logo.
 - Use the square wordmark from `assets/Crestwood+Square+Wordmark.svg` or `assets/Crestwood+Square+Wordmark.png` when a compact square mark should still spell out "Crestwood Church," such as email signatures or avatar-like placements.
+- For staff email signature images, use `scripts/create_staff_email_signature.py` unless there is a specific reason to hand-build the layout.
 
 ## Workflow
 1. Identify the output format (docx, xlsx, pptx, pdf, image, web) and the audience.
@@ -21,7 +22,7 @@ description: Apply Crestwood Church branding (Raleway font, #158fb2 palette, log
 ## Format-specific guidance
 - Text documents (letters, memos, newsletters): use Raleway for headings and body, apply the Primary color for headings or section rules, and place the primary horizontal logo in the header or cover.
 - Emails to the congregation: use Raleway if supported, use the Primary color for headings or accents, and include the primary horizontal logo in the header or signature block when possible.
-- Staff email signatures: use the square wordmark, not the horizontal logo, in the standard white 800x200 banner pattern described in `references/brand-guidelines.md`; export a PNG for Gmail and keep individual personal signature files out of this reusable skill unless explicitly requested.
+- Staff email signatures: use `scripts/create_staff_email_signature.py` to create the standard white 800x200 Gmail PNG with the square wordmark, regular-weight Raleway, dark teal text, and divider. Keep individual personal signature files out of this reusable skill unless explicitly requested.
 - Spreadsheets (budgets, finance): use Raleway for headers, apply the Primary color to header rows, and keep data readability as the priority.
 - Presentations/posters: use bold color blocks with the Primary or Dark palette, include the primary horizontal logo on the title slide or footer, and use Light for subtle backgrounds. Use the C mark sparingly for compact icon placements, watermarks, or stickers. Use the square wordmark for square/avatar-style needs where the church name should remain visible.
 
