@@ -12,6 +12,7 @@ description: Apply Crestwood Church branding (Raleway font, #158fb2 palette, log
 - Use the alternate C mark from `assets/Crestwood+C+Mark.svg` or `assets/Crestwood+C+Mark.png` only when a compact icon-style mark is a better fit than the full horizontal logo.
 - Use the square wordmark from `assets/Crestwood+Square+Wordmark.svg` or `assets/Crestwood+Square+Wordmark.png` when a compact square mark should still spell out "Crestwood Church," such as email signatures or avatar-like placements.
 - For staff email signature images, use `scripts/create_staff_email_signature.py` unless there is a specific reason to hand-build the layout.
+- For portable script use, run with Python 3 and install `requirements.txt` if Pillow is unavailable.
 
 ## Workflow
 1. Identify the output format (docx, xlsx, pptx, pdf, image, web) and the audience.

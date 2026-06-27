@@ -27,8 +27,11 @@ LOGO_DARK_BLUE = (0, 56, 72, 255)
 def load_raleway(size: int, font_path: Path) -> ImageFont.FreeTypeFont:
     font = ImageFont.truetype(str(font_path), size=size)
     if hasattr(font, "set_variation_by_axes"):
-        # The local Raleway variable font can default to Thin; force regular.
-        font.set_variation_by_axes([400])
+        try:
+            # Variable fonts can default to Thin; force regular when supported.
+            font.set_variation_by_axes([400])
+        except OSError:
+            pass
     return font
 
 

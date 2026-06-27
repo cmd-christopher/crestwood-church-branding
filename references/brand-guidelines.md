@@ -40,6 +40,7 @@
 ## Staff email signatures
 - Use a white 800x200 px banner image for Gmail signatures; export PNG for the final email-client asset.
 - Prefer `scripts/create_staff_email_signature.py` for generated signature images; it defaults to the bundled Raleway font and does not require system font installation.
+- Runtime requirement: Python 3 with Pillow. If Pillow is missing, install the skill's `requirements.txt` in the active environment, then run `python3 scripts/create_staff_email_signature.py ...` or the platform's equivalent Python command.
 - Place `assets/Crestwood+Square+Wordmark.svg` or `.png` on the left at about 140-145 px square, vertically centered with generous white space.
 - Add a thin vertical divider in Logo dark blue (#003848) between the logo and staff details, about 3 px wide and about the same height as the logo.
 - Set all text in Raleway, Logo dark blue (#003848). Use a large regular-weight name line, then smaller regular-weight title/email lines. When using a variable Raleway font, explicitly set weight 400; do not rely on the font default, which can render too thin.
