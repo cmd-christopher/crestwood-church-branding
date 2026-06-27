@@ -18,9 +18,13 @@
 - Alternate C mark files:
   - assets/Crestwood+C+Mark.svg (vector use, web, print, scalable layouts)
   - assets/Crestwood+C+Mark.png (Office docs, email clients, square/avatar-style placements)
+- Square wordmark files:
+  - assets/Crestwood+Square+Wordmark.svg (vector use, web, print, scalable layouts)
+  - assets/Crestwood+Square+Wordmark.png (Office docs, email clients, email signatures, square/avatar-style placements)
 - Use the primary horizontal logo by default when the church name should be visible.
 - Use the alternate C mark when a compact icon-style mark is a better fit, such as square social/avatar placements, small badges, watermarks, stickers, or layout accents where the full horizontal logo would be crowded.
-- Keep aspect ratio; scale uniformly (same percentage horizontally and vertically); do not stretch, skew, or recolor either mark.
+- Use the square wordmark when a compact square mark is needed but the words "Crestwood Church" should still be visible, such as staff email signatures, profile-style image blocks, or other small layouts based on the square signature mark.
+- Keep aspect ratio; scale uniformly (same percentage horizontally and vertically); do not stretch, skew, or recolor any logo or mark.
 - Place with clear space around logos/marks; avoid crowding other elements.
 
 ## Usage notes
