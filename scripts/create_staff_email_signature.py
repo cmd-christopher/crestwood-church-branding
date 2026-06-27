@@ -6,12 +6,18 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+try:
+    from PIL import Image, ImageDraw, ImageFont
+except ImportError as exc:
+    raise SystemExit(
+        "This script requires Pillow. Install it with `python3 -m pip install Pillow` "
+        "or run it in an agent harness that already provides Pillow."
+    ) from exc
 
 
 SKILL_DIR = Path(__file__).resolve().parents[1]
 LOGO = SKILL_DIR / "assets" / "Crestwood+Square+Wordmark.png"
-DEFAULT_FONT = Path("/Users/christopher/Library/Fonts/Raleway-VariableFont_wght.ttf")
+DEFAULT_FONT = SKILL_DIR / "assets" / "fonts" / "Raleway-VariableFont_wght.ttf"
 
 WIDTH, HEIGHT = 800, 200
 WHITE = (255, 255, 255, 255)
@@ -89,7 +95,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--role", required=True)
     parser.add_argument("--email", required=True)
     parser.add_argument("--output", required=True, type=Path)
-    parser.add_argument("--font", default=DEFAULT_FONT, type=Path)
+    parser.add_argument("--font", default=DEFAULT_FONT, type=Path, help="Defaults to bundled Raleway.")
     return parser.parse_args()
 
 

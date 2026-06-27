@@ -2,6 +2,7 @@
 
 ## Typography
 - Primary font: Raleway (use for headings and body copy).
+- Bundled font: `assets/fonts/Raleway-VariableFont_wght.ttf` for portable generated outputs.
 - If Raleway is unavailable, note the limitation and ask before substituting.
 
 ## Color palette
@@ -22,6 +23,9 @@
 - Square wordmark files:
   - assets/Crestwood+Square+Wordmark.svg (vector use, web, print, scalable layouts)
   - assets/Crestwood+Square+Wordmark.png (Office docs, email clients, email signatures, square/avatar-style placements)
+- Font files:
+  - assets/fonts/Raleway-VariableFont_wght.ttf (bundled for generated outputs and staff systems without Raleway installed)
+  - assets/fonts/OFL.txt (Raleway font license)
 - Use the primary horizontal logo by default when the church name should be visible.
 - Use the alternate C mark when a compact icon-style mark is a better fit, such as square social/avatar placements, small badges, watermarks, stickers, or layout accents where the full horizontal logo would be crowded.
 - Use the square wordmark when a compact square mark is needed but the words "Crestwood Church" should still be visible, such as staff email signatures, profile-style image blocks, or other small layouts based on the square signature mark.
@@ -35,7 +39,7 @@
 
 ## Staff email signatures
 - Use a white 800x200 px banner image for Gmail signatures; export PNG for the final email-client asset.
-- Prefer `scripts/create_staff_email_signature.py` for generated signature images.
+- Prefer `scripts/create_staff_email_signature.py` for generated signature images; it defaults to the bundled Raleway font and does not require system font installation.
 - Place `assets/Crestwood+Square+Wordmark.svg` or `.png` on the left at about 140-145 px square, vertically centered with generous white space.
 - Add a thin vertical divider in Logo dark blue (#003848) between the logo and staff details, about 3 px wide and about the same height as the logo.
 - Set all text in Raleway, Logo dark blue (#003848). Use a large regular-weight name line, then smaller regular-weight title/email lines. When using a variable Raleway font, explicitly set weight 400; do not rely on the font default, which can render too thin.
