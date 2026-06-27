@@ -8,6 +8,7 @@
 - Primary: #158fb2
 - Dark: #0f657d
 - Light: #5cb1ca
+- Logo dark blue: #003848 (use for staff email signature text and divider to match the square wordmark box)
 
 ## Logos and Marks
 - Primary horizontal logo files:
@@ -36,8 +37,8 @@
 - Use a white 800x200 px banner image for Gmail signatures; export PNG for the final email-client asset.
 - Prefer `scripts/create_staff_email_signature.py` for generated signature images.
 - Place `assets/Crestwood+Square+Wordmark.svg` or `.png` on the left at about 140-145 px square, vertically centered with generous white space.
-- Add a thin vertical divider in dark teal between the logo and staff details, about 3 px wide and about the same height as the logo.
-- Set all text in Raleway, dark teal. Use a large regular-weight name line, then smaller regular-weight title/email lines. When using a variable Raleway font, explicitly set weight 400; do not rely on the font default, which can render too thin.
+- Add a thin vertical divider in Logo dark blue (#003848) between the logo and staff details, about 3 px wide and about the same height as the logo.
+- Set all text in Raleway, Logo dark blue (#003848). Use a large regular-weight name line, then smaller regular-weight title/email lines. When using a variable Raleway font, explicitly set weight 400; do not rely on the font default, which can render too thin.
 - Use this text pattern when it fits cleanly: `Name` on line 1 and `Role | email@crestwoodrva.org` on line 2.
 - For longer roles or emails, use three lines: `Name`, `Role`, `email@crestwoodrva.org`.
 - Do not store individual staff signature images in skill assets unless the user explicitly asks for reusable template examples; generated personal signatures should live outside the skill repository.

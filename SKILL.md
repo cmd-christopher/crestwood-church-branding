@@ -22,7 +22,7 @@ description: Apply Crestwood Church branding (Raleway font, #158fb2 palette, log
 ## Format-specific guidance
 - Text documents (letters, memos, newsletters): use Raleway for headings and body, apply the Primary color for headings or section rules, and place the primary horizontal logo in the header or cover.
 - Emails to the congregation: use Raleway if supported, use the Primary color for headings or accents, and include the primary horizontal logo in the header or signature block when possible.
-- Staff email signatures: use `scripts/create_staff_email_signature.py` to create the standard white 800x200 Gmail PNG with the square wordmark, regular-weight Raleway, dark teal text, and divider. Keep individual personal signature files out of this reusable skill unless explicitly requested.
+- Staff email signatures: use `scripts/create_staff_email_signature.py` to create the standard white 800x200 Gmail PNG with the square wordmark, regular-weight Raleway, and text/divider in the logo box color (#003848). Keep individual personal signature files out of this reusable skill unless explicitly requested.
 - Spreadsheets (budgets, finance): use Raleway for headers, apply the Primary color to header rows, and keep data readability as the priority.
 - Presentations/posters: use bold color blocks with the Primary or Dark palette, include the primary horizontal logo on the title slide or footer, and use Light for subtle backgrounds. Use the C mark sparingly for compact icon placements, watermarks, or stickers. Use the square wordmark for square/avatar-style needs where the church name should remain visible.
 

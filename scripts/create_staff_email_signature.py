@@ -15,7 +15,7 @@ DEFAULT_FONT = Path("/Users/christopher/Library/Fonts/Raleway-VariableFont_wght.
 
 WIDTH, HEIGHT = 800, 200
 WHITE = (255, 255, 255, 255)
-DARK_TEAL = (15, 101, 125, 255)
+LOGO_DARK_BLUE = (0, 56, 72, 255)
 
 
 def load_raleway(size: int, font_path: Path) -> ImageFont.FreeTypeFont:
@@ -66,7 +66,7 @@ def create_signature(name: str, role: str, email: str, output: Path, font_path: 
     draw.rounded_rectangle(
         (divider_x, divider_y, divider_x + 3, divider_y + logo_size),
         radius=1,
-        fill=DARK_TEAL,
+        fill=LOGO_DARK_BLUE,
     )
 
     text_x = 244
@@ -75,9 +75,9 @@ def create_signature(name: str, role: str, email: str, output: Path, font_path: 
     detail_font = fit_font(draw, role, 24, max_text_width, font_path)
     email_font = fit_font(draw, email, 24, max_text_width, font_path)
 
-    draw.text((text_x, 48), name, font=name_font, fill=DARK_TEAL)
-    draw.text((text_x, 103), role, font=detail_font, fill=DARK_TEAL)
-    draw.text((text_x, 134), email, font=email_font, fill=DARK_TEAL)
+    draw.text((text_x, 48), name, font=name_font, fill=LOGO_DARK_BLUE)
+    draw.text((text_x, 103), role, font=detail_font, fill=LOGO_DARK_BLUE)
+    draw.text((text_x, 134), email, font=email_font, fill=LOGO_DARK_BLUE)
 
     output.parent.mkdir(parents=True, exist_ok=True)
     canvas.convert("RGB").save(output, "PNG", optimize=True)
