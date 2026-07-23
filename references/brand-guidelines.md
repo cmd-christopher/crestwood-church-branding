@@ -3,6 +3,7 @@
 ## Typography
 - Primary font: Raleway (use for headings and body copy).
 - Bundled font: `assets/fonts/Raleway-VariableFont_wght.ttf` for portable generated outputs.
+- Explicitly set generated body copy to weight 400 or 500 and headings to weight 600 or 700. The bundled variable font can otherwise open at weight 100 (Thin), which is not readable at normal document and diagram sizes.
 - If Raleway is unavailable, note the limitation and ask before substituting.
 
 ## Color palette
@@ -10,6 +11,32 @@
 - Dark: #0f657d
 - Light: #5cb1ca
 - Logo dark blue: #003848 (use for staff email signature text and divider to match the square wordmark box)
+
+## Approved text and background pairings
+
+Normal-size text requires at least `4.5:1` contrast. Large text (at least 18 pt regular or 14 pt bold) requires at least `3:1`.
+
+| Use | Text | Background | Contrast |
+|---|---|---|---:|
+| Dark filled box | White `#FFFFFF` | Dark `#0F657D` | 6.61:1 |
+| Extra-dark filled box | White `#FFFFFF` | Logo dark `#003848` | 12.66:1 |
+| Light filled box | Logo dark `#003848` | Light `#5CB1CA` | 5.18:1 |
+| Normal text on white | Dark `#0F657D` or Logo dark `#003848` | White `#FFFFFF` | 6.61:1 or 12.66:1 |
+| Large heading only | Primary `#158FB2` | White `#FFFFFF` | 3.75:1 |
+
+- Do not use Light blue text on white; Light (`#5CB1CA`) on white is only 2.44:1.
+- Do not use dark text on Dark (`#0F657D`) or Logo dark (`#003848`) backgrounds; use white text.
+- Do not place normal-size text directly on Primary (`#158FB2`), and do not use black, Dark, or Logo dark text on a Primary fill even when the mathematical contrast passes. Use a Dark fill with white text or a Light fill with Logo dark text instead.
+- Do not use white normal-size text on Primary; that pairing is only 3.75:1 and is suitable only for large text.
+- Primary and Light remain brand colors, but brand consistency never overrides readability.
+
+For a custom combination, run:
+
+```bash
+python3 scripts/check_contrast.py --foreground '#FFFFFF' --background '#0F657D' --text-size normal
+```
+
+The checker uses WCAG contrast math and has no third-party dependencies.
 
 ## Logos and Marks
 - Primary horizontal logo files:
@@ -34,8 +61,18 @@
 
 ## Usage notes
 - Prefer clean, modern layouts with generous whitespace.
-- Use the Primary color for accents and headings; use Dark for emphasis or footers; use Light for subtle backgrounds.
+- Use Primary for large headings, rules, icons, and accents; use Dark or Logo dark with white text for strong filled areas; use Light only as a background with Logo dark text.
 - Avoid adding new colors unless the user asks.
+
+## Generated visual readability check
+
+Before delivering a document, slide, graphic, email image, or web layout:
+
+1. Choose an approved text/background pairing above or run `scripts/check_contrast.py`.
+2. Explicitly set Raleway weight 400 or 500 for body text and weight 600 or 700 for headings.
+3. Size body text for the final placed dimensions, not merely the source canvas dimensions.
+4. Render at final size and inspect at 100% zoom for contrast, thin type, cramped wrapping, clipping, and text that becomes too small when embedded.
+5. If any text is difficult to read, change the pairing, weight, size, or layout before delivery.
 
 ## Staff email signatures
 - Use a white 800x200 px banner image for Gmail signatures; export PNG for the final email-client asset.

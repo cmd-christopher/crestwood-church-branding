@@ -1,6 +1,6 @@
 ---
 name: crestwood-church-branding
-description: Apply Crestwood Church branding (Raleway font, #158fb2 palette, logo) when creating or editing any church-related materials, including Word/docx letters, Excel/xlsx spreadsheets, PowerPoint/pptx presentations, posters, flyers, newsletters, emails to the Crestwood congregation, or any document explicitly for Crestwood Church or its congregation.
+description: Use when creating or editing any Crestwood Church material, including Word/docx, Excel/xlsx, PowerPoint/pptx, PDFs, graphics, posters, flyers, newsletters, websites, or congregation and staff communications.
 ---
 
 # Crestwood Church Branding
@@ -8,25 +8,31 @@ description: Apply Crestwood Church branding (Raleway font, #158fb2 palette, log
 ## Quick start
 - Confirm the request is for Crestwood Church or a church-specific audience; if unclear, ask.
 - Apply the brand guidelines in `references/brand-guidelines.md`.
-- Use the primary horizontal logo from `assets/Crestwood+Horizontal+Logo.svg` for scalable/vector output; use `assets/Crestwood+Horizontal+Logo.webp` or `assets/Crestwood+Horizontal+Logo.png` when raster formats are required.
-- Use the alternate C mark from `assets/Crestwood+C+Mark.svg` or `assets/Crestwood+C+Mark.png` only when a compact icon-style mark is a better fit than the full horizontal logo.
-- Use the square wordmark from `assets/Crestwood+Square+Wordmark.svg` or `assets/Crestwood+Square+Wordmark.png` when a compact square mark should still spell out "Crestwood Church," such as email signatures or avatar-like placements.
-- For staff email signature images, use `scripts/create_staff_email_signature.py` unless there is a specific reason to hand-build the layout.
-- For portable script use, run with Python 3 and install `requirements.txt` if Pillow is unavailable.
+- Use the horizontal logo when the church name should be visible, the C mark for icon-like placements, and the square wordmark for signatures or avatars. Prefer SVG for vector output and PNG for Office or email.
+- Pass the Accessibility and contrast gate below before delivering any design that uses colored text or a colored background.
+- Generate staff email signatures with `scripts/create_staff_email_signature.py`; install `requirements.txt` if Pillow is unavailable.
 
 ## Workflow
-1. Identify the output format (docx, xlsx, pptx, pdf, image, web) and the audience.
-2. Apply typography, colors, and logo usage from `references/brand-guidelines.md`.
-3. Keep layouts clean and readable; do not introduce new colors or fonts unless requested.
-4. If a required brand element is unavailable (e.g., font missing), call it out and ask before substituting.
+1. Identify the output format and audience.
+2. Apply the reference typography, colors, and correct logo asset without recoloring or distortion.
+3. Select an approved text/background pairing and explicitly set Raleway weight.
+4. Render at final size and inspect readability at 100% zoom. Ask before substituting unavailable brand elements.
+
+## Accessibility and contrast gate
+
+- Normal-size text must have at least `4.5:1` contrast. Large text (at least 18 pt regular or 14 pt bold) must have at least `3:1`.
+- Use white text on Dark (`#0F657D`) or Logo dark (`#003848`) fills.
+- Use Logo dark (`#003848`) text on Light (`#5CB1CA`) fills.
+- On white, use Dark or Logo dark for normal text. Primary (`#158FB2`) is limited to large headings, rules, icons, and accents.
+- Do not use Light (`#5CB1CA`) as text on white, dark text on Dark/Logo dark fills, or dark text on a Primary fill.
+- For generated graphics, explicitly set Raleway to weight 400 or 500 for body text and weight 600 or 700 for headings. The bundled variable font may otherwise render at weight 100 (Thin).
+- For any other color combination, run `python3 scripts/check_contrast.py --foreground '#FFFFFF' --background '#0F657D' --text-size normal` and use only a passing pairing.
+- Contrast math is necessary but not sufficient: render at final size and inspect the actual output for readable weight, size, wrapping, and background pairing.
 
 ## Format-specific guidance
-- Text documents (letters, memos, newsletters): use Raleway for headings and body, apply the Primary color for headings or section rules, and place the primary horizontal logo in the header or cover.
-- Emails to the congregation: use Raleway if supported, use the Primary color for headings or accents, and include the primary horizontal logo in the header or signature block when possible.
-- Staff email signatures: use `scripts/create_staff_email_signature.py` to create the standard white 800x200 Gmail PNG with the square wordmark, bundled regular-weight Raleway, and text/divider in the logo box color (#003848). Keep individual personal signature files out of this reusable skill unless explicitly requested.
-- Spreadsheets (budgets, finance): use Raleway for headers, apply the Primary color to header rows, and keep data readability as the priority.
-- Presentations/posters: use bold color blocks with the Primary or Dark palette, include the primary horizontal logo on the title slide or footer, and use Light for subtle backgrounds. Use the C mark sparingly for compact icon placements, watermarks, or stickers. Use the square wordmark for square/avatar-style needs where the church name should remain visible.
+- Documents and emails: use Raleway, Primary for large headings or rules, and the horizontal logo where the church name should appear.
+- Staff signatures: use the generator for the white 800x200 PNG, square wordmark, weight-400 Raleway, and Logo dark text/divider. Keep personal outputs outside the skill.
+- Spreadsheets: use Raleway headers and readable approved header-row pairings.
+- Presentations, posters, and web: use Dark/Logo dark blocks with white text or Light blocks with Logo dark text. Reserve Primary for large headings and accents.
 
-## Notes
-- If the user asks for a web page or UI, apply these brand guidelines to the design.
-- Do not recolor or distort any logo/mark; only scale uniformly (same percentage horizontally and vertically).
+Do not introduce new colors or fonts unless requested.
