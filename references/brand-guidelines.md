@@ -40,16 +40,16 @@ The checker uses WCAG contrast math and has no third-party dependencies.
 
 ## Logos and Marks
 - Primary horizontal logo files:
-  - assets/Crestwood+Horizontal+Logo.svg (preferred scalable/vector use; letterforms are outlined)
-  - assets/Crestwood+Horizontal+Logo.editable.svg (editable source/reference; requires Raleway)
-  - assets/Crestwood+Horizontal+Logo.webp (web use)
-  - assets/Crestwood+Horizontal+Logo.png (Office docs and email clients)
+  - assets/Crestwood-Horizontal-Logo.svg (preferred scalable/vector use; letterforms are outlined)
+  - assets/Crestwood-Horizontal-Logo.editable.svg (editable source/reference; requires Raleway)
+  - assets/Crestwood-Horizontal-Logo.webp (web use)
+  - assets/Crestwood-Horizontal-Logo.png (Office docs and email clients)
 - Alternate C mark files:
-  - assets/Crestwood+C+Mark.svg (vector use, web, print, scalable layouts)
-  - assets/Crestwood+C+Mark.png (Office docs, email clients, square/avatar-style placements)
+  - assets/Crestwood-C-Mark.svg (vector use, web, print, scalable layouts)
+  - assets/Crestwood-C-Mark.png (Office docs, email clients, square/avatar-style placements)
 - Square wordmark files:
-  - assets/Crestwood+Square+Wordmark.svg (vector use, web, print, scalable layouts)
-  - assets/Crestwood+Square+Wordmark.png (Office docs, email clients, email signatures, square/avatar-style placements)
+  - assets/Crestwood-Square-Wordmark.svg (vector use, web, print, scalable layouts)
+  - assets/Crestwood-Square-Wordmark.png (Office docs, email clients, email signatures, square/avatar-style placements)
 - Font files:
   - assets/fonts/Raleway-VariableFont_wght.ttf (bundled for generated outputs and staff systems without Raleway installed)
   - assets/fonts/OFL.txt (Raleway font license)
@@ -78,7 +78,7 @@ Before delivering a document, slide, graphic, email image, or web layout:
 - Use a white 800x200 px banner image for Gmail signatures; export PNG for the final email-client asset.
 - Prefer `scripts/create_staff_email_signature.py` for generated signature images; it defaults to the bundled Raleway font and does not require system font installation.
 - Runtime requirement: Python 3 with Pillow. If Pillow is missing, install the skill's `requirements.txt` in the active environment, then run `python3 scripts/create_staff_email_signature.py ...` or the platform's equivalent Python command.
-- Place `assets/Crestwood+Square+Wordmark.svg` or `.png` on the left at about 140-145 px square, vertically centered with generous white space.
+- Place `assets/Crestwood-Square-Wordmark.svg` or `.png` on the left at about 140-145 px square, vertically centered with generous white space.
 - Add a thin vertical divider in Logo dark blue (#003848) between the logo and staff details, about 3 px wide and about the same height as the logo.
 - Set all text in Raleway, Logo dark blue (#003848). Use a large regular-weight name line, then smaller regular-weight title/email lines. When using a variable Raleway font, explicitly set weight 400; do not rely on the font default, which can render too thin.
 - Use this text pattern when it fits cleanly: `Name` on line 1 and `Role | email@crestwoodrva.org` on line 2.

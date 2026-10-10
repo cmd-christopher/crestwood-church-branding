@@ -16,7 +16,7 @@ except ImportError as exc:
 
 
 SKILL_DIR = Path(__file__).resolve().parents[1]
-LOGO = SKILL_DIR / "assets" / "Crestwood+Square+Wordmark.png"
+LOGO = SKILL_DIR / "assets" / "Crestwood-Square-Wordmark.png"
 DEFAULT_FONT = SKILL_DIR / "assets" / "fonts" / "Raleway-VariableFont_wght.ttf"
 
 WIDTH, HEIGHT = 800, 200
