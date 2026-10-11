@@ -1,6 +1,6 @@
 ---
 name: crestwood-church-branding
-description: Use when creating or editing any Crestwood Church material, including Word/docx, Excel/xlsx, PowerPoint/pptx, PDFs, graphics, posters, flyers, newsletters, websites, or congregation and staff communications.
+description: Use for any Crestwood Church material: docx, xlsx, pptx, PDFs, graphics, posters, flyers, newsletters, websites, or staff and congregation communications.
 ---
 
 # Crestwood Church Branding
