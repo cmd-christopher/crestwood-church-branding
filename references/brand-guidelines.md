@@ -10,7 +10,8 @@
 - Primary: #158fb2
 - Dark: #0f657d
 - Light: #5cb1ca
-- Logo dark blue: #003848 (use for staff email signature text and divider to match the square wordmark box)
+- Logo dark blue: #003848 (use for staff email signature divider to match the square wordmark box)
+- Signature text teal: #083C4F (matches the Matt Merrill staff signature reference; approved on white)
 
 ## Approved text and background pairings
 
@@ -22,6 +23,7 @@ Normal-size text requires at least `4.5:1` contrast. Large text (at least 18 pt 
 | Extra-dark filled box | White `#FFFFFF` | Logo dark `#003848` | 12.66:1 |
 | Light filled box | Logo dark `#003848` | Light `#5CB1CA` | 5.18:1 |
 | Normal text on white | Dark `#0F657D` or Logo dark `#003848` | White `#FFFFFF` | 6.61:1 or 12.66:1 |
+| Staff signature text | Signature teal `#083C4F` | White `#FFFFFF` | 11.87:1 |
 | Large heading only | Primary `#158FB2` | White `#FFFFFF` | 3.75:1 |
 
 - Do not use Light blue text on white; Light (`#5CB1CA`) on white is only 2.44:1.
@@ -50,6 +52,8 @@ The checker uses WCAG contrast math and has no third-party dependencies.
 - Square wordmark files:
   - assets/Crestwood-Square-Wordmark.svg (vector use, web, print, scalable layouts)
   - assets/Crestwood-Square-Wordmark.png (Office docs, email clients, email signatures, square/avatar-style placements)
+- Staff signature reference logo:
+  - assets/Crestwood-Staff-Signature-Wordmark.png (logo only, extracted from the user-supplied `Matt Opt 2.jpg`; use for the 800x200 signature generator)
 - Font files:
   - assets/fonts/Raleway-VariableFont_wght.ttf (bundled for generated outputs and staff systems without Raleway installed)
   - assets/fonts/OFL.txt (Raleway font license)
@@ -78,9 +82,9 @@ Before delivering a document, slide, graphic, email image, or web layout:
 - Use a white 800x200 px banner image for Gmail signatures; export PNG for the final email-client asset.
 - Prefer `scripts/create_staff_email_signature.py` for generated signature images; it defaults to the bundled Raleway font and does not require system font installation.
 - Runtime requirement: Python 3 with Pillow. If Pillow is missing, install the skill's `requirements.txt` in the active environment, then run `python3 scripts/create_staff_email_signature.py ...` or the platform's equivalent Python command.
-- Place `assets/Crestwood-Square-Wordmark.svg` or `.png` on the left at about 140-145 px square, vertically centered with generous white space.
+- Use `assets/Crestwood-Staff-Signature-Wordmark.png` at its native 153x152 px size, placed at (34, 24). It preserves the exact reference logo, including its padding and edge antialiasing; the visible frame spans x=38..182 and y=28..171. The asset is a logo-only crop of reference bounds (34, 24, 187, 176), with no personal staff details. Do not crop, resize, redraw, or substitute the generic square wordmark in this generator. Keep the divider at x=228 and text at x=251.
 - Add a thin vertical divider in Logo dark blue (#003848) between the logo and staff details, about 3 px wide and about the same height as the logo.
-- Set all text in Raleway, Logo dark blue (#003848). Use a large regular-weight name line, then smaller regular-weight title/email lines. When using a variable Raleway font, explicitly set weight 400; do not rely on the font default, which can render too thin.
+- Use the generator's calibrated Raleway treatment: 44 px name at weight 475 with 0.95 px letter spacing, and 27.75 px combined role/email at weight 470 with 0.8 px letter spacing, in signature text teal (#083C4F). Longer details use separate 24 px lines. These variable-font settings, baseline positions, and 4x text rendering match the apparent weight and spacing of the Matt Merrill reference; a uniform weight 500 makes both lines too heavy. Reduce individual line sizes if needed to prevent overflow.
 - Use this text pattern when it fits cleanly: `Name` on line 1 and `Role | email@crestwoodrva.org` on line 2.
 - For longer roles or emails, use three lines: `Name`, `Role`, `email@crestwoodrva.org`.
 - Do not store individual staff signature images in skill assets unless the user explicitly asks for reusable template examples; generated personal signatures should live outside the skill repository.

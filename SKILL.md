@@ -1,6 +1,6 @@
 ---
 name: crestwood-church-branding
-description: Use for any Crestwood Church material: docx, xlsx, pptx, PDFs, graphics, posters, flyers, newsletters, websites, or staff and congregation communications.
+description: 'Use for any Crestwood Church material: docx, xlsx, pptx, PDFs, graphics, posters, flyers, newsletters, websites, or staff and congregation communications.'
 ---
 
 # Crestwood Church Branding
@@ -31,7 +31,7 @@ description: Use for any Crestwood Church material: docx, xlsx, pptx, PDFs, grap
 
 ## Format-specific guidance
 - Documents and emails: use Raleway, Primary for large headings or rules, and the horizontal logo where the church name should appear.
-- Staff signatures: use the generator for the white 800x200 PNG, square wordmark, weight-400 Raleway, and Logo dark text/divider. Keep personal outputs outside the skill.
+- Staff signatures: use the generator's calibrated Raleway text and dedicated `assets/Crestwood-Staff-Signature-Wordmark.png` to match the Matt Merrill reference, with a white 800x200 PNG and Logo dark divider. Prefer two lines, with role and email together; the generator uses three lines when needed. Keep personal outputs outside the skill.
 - Spreadsheets: use Raleway headers and readable approved header-row pairings.
 - Presentations, posters, and web: use Dark/Logo dark blocks with white text or Light blocks with Logo dark text. Reserve Primary for large headings and accents.
 
